@@ -7,7 +7,7 @@ A Rick and Morty CTF. Help turn Rick back into a human!
 https://tryhackme.com/room/picklerick
 
 ### 26-05-2023
-### Level Of Difficulty : Easy
+### Level Of Difficulty: Easy
 
 ## Introduction
 
@@ -46,7 +46,7 @@ Using drb we find some interesting pages!  Let's give them a visit.
 
 That looks like it can be useful... I'll keep it in the back pocket for now and check out the other directories we found.
 
-There is another login.php directory which is discovered by another tool during directory Enumeration. let's visit it.
+There is another login.php directory that is discovered by another tool during directory Enumeration. let's visit it.
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/6.PNG)
 
@@ -65,7 +65,7 @@ Let's try to gather more information.
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/8.PNG)
 
-look's like there an interesting file name `Sup3rS3cretPickl3Ingred.txt`
+look's like there is an interesting file name `Sup3rS3cretPickl3Ingred.txt`
 Let's try to read that file:
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/10.PNG)
@@ -82,17 +82,17 @@ We have found our first ingredient!
 
 # Ingredients 2 & 3
 
-In our current directory there is a clue.txt file which can tell as about other ingredients. Let's open it.
+In our current directory, there is a clue.txt file that can tell us about other ingredients. Let's open it.
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/11.PNG)
 
-Ah, so we know that the other ingredient is also in the file system! We don't know what it's called, so we can't do a find, unfortunately.  I took a guess that it'd be in the user folder and happened to be right:
+Ah, so we know that the other ingredient is also in the file system! We don't know what it's called, so we can't do a find, unfortunately.  I guessed that it'd be in the user folder and happened to be right:
 
 `ls -al /home/rick`
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/12.PNG)
 
-We have found the second ingredient. As we try to read the file of the second ingredient but the cat , nano, more etc command is disable.
+We have found the second ingredient. As we try to read the file of the second ingredient but the cat, nano, more, etc command is disabled.
 
 But there is a command `less` we can use. which is not restricted to use.
 
@@ -102,25 +102,25 @@ But there is a command `less` we can use. which is not restricted to use.
 
 So. there is our second ingredient. Now we have to find the last ingredient.
 
-We have to look around the root directory. But as a now user we can't traverse the root directory.
+We have to look around the root directory. But as a current user, we can't traverse the root directory.
 
-First we have to found Out our sudo privilege were we can use it.
+First, we have to find out our sudo privilege and where we can use it.
 
 `sudo -l`
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/14.PNG)
 
-From that we can see we can do anything!
+From that, we can see we can do anything!
 
 `sudo la -al /root`
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/15.PNG)
 
-With the use of sudo we can read the root directory file.
+With the use of sudo, we can read the root directory file.
 
 `sudo less /root/3rd.txt`
 
 ![App Screenshot](https://github.com/rohit00712/CTF-Writeups/blob/main/TryHackMe/Pickle%20Rick/images/16.PNG)
 
 
-Finally we have got the third ingredient!
+Finally, we have got the third ingredient!
