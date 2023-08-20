@@ -1,4 +1,4 @@
-![Screenshot 2023-08-20 224751.png](Simple_CTF%20434d9e130dc549059eec37b68aa59763/Screenshot 2023-08-20 161553.png)
+![Screenshot 2023-08-20 224751.png](Simple_CTF%20434d9e130dc549059eec37b68aa59763/Screenshot_2023-08-20_161553.png)
 
 # Simple_CTF
 
