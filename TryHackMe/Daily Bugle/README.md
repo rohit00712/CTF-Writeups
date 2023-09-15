@@ -1,5 +1,7 @@
 ![Screenshot 2023-09-12 141646.png](daily_bugle%20451d51520e294724a2cc0100e38d7457/5a1494ff275a366be8418a9bf831847c.png)
 
+![Screenshot 2023-09-12 141646.png](daily_bugle%20451d51520e294724a2cc0100e38d7457/H98yNCQ.png)
+
 # daily_bugle
 
 DailyBugle is a CTF Linux box with difficulty rated as “high” on the TryHackMe platform. The machine covers Joomla 3.7.0 SQL injection vulnerability and privilege escalation using yum.
