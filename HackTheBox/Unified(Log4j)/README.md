@@ -1,4 +1,4 @@
-![Screenshot 2023-11-06 145544.png](Unified%20(Log4j)%20f60930bf5d12420cb715e54fce034d5a/Screenshot 2023-11-06 150245.png)
+![Screenshot 2023-11-06 145544.png](Unified%20(Log4j)%20f60930bf5d12420cb715e54fce034d5a/image.png)
 
 # Unified (Log4j)
 
